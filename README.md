@@ -22,7 +22,7 @@ A simple web-based implementation of the classic hangman word guessing game usin
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/hangman-game.git
+   git clone https://github.com/yourusername/guess-word-game.git
    ```
 2. Open `index.html` in your web browser to start playing the game.
 
