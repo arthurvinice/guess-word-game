@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #7FC7D9, #DCF2F1);
+    /* margin: 0; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1  {
+    font-size: 4em;
+    color: #0f1035;
+    text-transform: uppercase;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #365486;
+    padding-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#instructions {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #0f1035;
+}
+
+#word-container {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #0f1035;
+}
+
+#letters-container {
+    margin-top: 20px;
+}
+
+.letter {
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.letter:hover {
+    background-color: #f0f0f0;
+}
+
+.wrong {
+    background-color: #ffcccc !important;
+    color: red !important;
+}
+
+#wrong-attempts {
+    color: #0f1035;
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    margin: 0 auto;
+    margin-top: auto;
+    max-width: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #FBF9F1;
+    color: #92C7CF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    width: 50%;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.texto1 {
+    font-size: 4vh;
+    text-shadow: 0 0 10px #AAD7D9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-links a {
+    margin: 0 10px; 
+}
+
+.footer #icone-footer-1, #icone-footer-2, #icone-footer-3, #icone-footer-4{
+    font-size: 6vh;
+    padding-bottom: 3px;
+}
+
+.footer #icone-footer-1 {
+    background: linear-gradient(to right, #0077B5, #00405F);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+.footer #icone-footer-2 {
+    background: linear-gradient(to right, #181717, #6e5494);
+    color: transparent;
+    -webkit-background-clip: text; 
+    background-clip: text;
+}
+
+
+.footer #icone-footer-3 {
+    background: linear-gradient(to right, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FFC837);
+    color: transparent;
+    -webkit-background-clip: text; 
+    background-clip: text;
+}
+
+.footer #icone-footer-4 {
+    background: linear-gradient(to top right, #0077B5, #00405F);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+} 
