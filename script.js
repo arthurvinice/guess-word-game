@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const wordContainer = document.getElementById('word-container')
     const lettersContainer = document.getElementById('letters-container')
-    const maxWrongAttempts = 6
+    const maxWrongAttempts = 8
     let word = ''
     let guessedLetters = new Set()
     let wrongLetters = new Set()
