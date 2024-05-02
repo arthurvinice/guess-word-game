@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 handleGuess(letter, letterButton)
             })
             lettersContainer.appendChild(letterButton)
-        });
+        })
     }
 
     // guessing a letter
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // checking if the word is guessed
                 if (isWordGuessed()) {
                     setTimeout(() => {
-                        alert('Congratulations! You Won! The correct word is: ' + word.toUpperCase());
+                        alert('Congratulations! You Won! The correct word is: ' + word.toUpperCase())
                         startGame()
                     }, 200)
                 }
@@ -115,4 +115,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     startGame()
-});
+})
