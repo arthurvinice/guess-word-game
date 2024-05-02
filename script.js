@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayWord() {
         wordContainer.innerHTML = ''
         word.split('').forEach(letter => {
-            const displayLetter = guessedLetters.has(letter) ? letter : '_'
+            const displayLetter = guessedLetters.has(letter.toLocaleUpperCase()) ? letter.toLocaleUpperCase() : '_'
             const letterSpan = document.createElement('span')
             letterSpan.textContent = displayLetter + ' '
             wordContainer.appendChild(letterSpan)
@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // show the available letters to guess
     function displayAvailableLetters() {
         lettersContainer.innerHTML = ''
-        const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+        const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
         alphabet.split('').forEach(letter => {
             const letterButton = document.createElement('button')
-            letterButton.textContent = letter
+            letterButton.textContent = letter.toUpperCase()
             letterButton.className = 'letter'
             letterButton.addEventListener('click', () => {
                 handleGuess(letter, letterButton)
@@ -62,8 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // guessing a letter
     function handleGuess(letter, letterButton) {
+        letter = letter.toUpperCase()
         if (!guessedLetters.has(letter) && !wrongLetters.has(letter)) {
-            if (word.includes(letter)) {
+            if (word.toLowerCase().includes(letter.toLowerCase())) {
                 guessedLetters.add(letter)
                 letterButton.style.backgroundColor = 'green'
                 letterButton.style.color = 'white'
@@ -86,19 +87,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             displayWord()
 
-            // checking if the word is guessed
-            if (isWordGuessed()) {
-                setTimeout(() => {
-                    alert('Congratulations! You Won! The correct word is: ' + word.toUpperCase());
-                    startGame()
-                }, 200)
+                // checking if the word is guessed
+                if (isWordGuessed()) {
+                    setTimeout(() => {
+                        alert('Congratulations! You Won! The correct word is: ' + word.toUpperCase());
+                        startGame()
+                    }, 200)
+                }
             }
-        }
     }
 
-    //checking if all the letters were guessed
+    //checking if all the correct letters were guessed
     function isWordGuessed() {
-        return word.split('').every(letter => guessedLetters.has(letter))
+        const wordUpperCase = word.toUpperCase()
+        for(let letter of wordUpperCase){
+            if (!guessedLetters.has(letter)) {
+                return false
+            }
+        }
+        return true
     }
 
     // updates the wrong guesses

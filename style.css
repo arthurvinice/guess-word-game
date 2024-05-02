@@ -84,7 +84,7 @@ h1  {
     text-decoration: none;
 }
 
-.texto1 {
+.text1 {
     font-size: 4vh;
     text-shadow: 0 0 10px #AAD7D9;
     border-radius: 10px;
@@ -136,3 +136,7 @@ h1  {
     -webkit-background-clip: text;
     background-clip: text;
 } 
+
+@media (max-width: 592px){
+
+}
