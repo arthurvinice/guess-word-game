@@ -28,4 +28,4 @@ A simple web-based implementation of the classic hangman word guessing game usin
 
 ## Preview
 
-![GUESS-GAME](https://imgur.com/GRk8WOE)
+[GUESS-GAME](https://imgur.com/GRk8WOE)
