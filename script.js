@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let wrongLetters = new Set()
     let wrongAttempts = 0
 
-    // Getting a random word from the API
+    // getting a random word from the API
     async function getRandomWord() {
         try {
             const response = await fetch('https://random-word-api.herokuapp.com/word?number=1')
@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return data[0]
         } catch (error) {
             console.error('Error:', error)
-            return 'javascript' // If error, uses a standard word
+            return 'javascript' // if error, uses a standard word
         }
     }
 
-    // Starting the game
+    // starting the game
     async function startGame() {
         word = await getRandomWord()
         guessedLetters.clear()
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
     }
 
-    //checking if all the correct letters were guessed
+    // checking if all the correct letters were guessed
     function isWordGuessed() {
         const wordUpperCase = word.toUpperCase()
         for(let letter of wordUpperCase){
