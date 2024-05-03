@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Error:', error)
             return 'javascript' // if error, uses a standard word
+            
         }
     }
 
@@ -115,4 +116,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     startGame()
+
+    //login button click
+    const loginButton = document.getElementById('login-button');
+
+    // listener to login button
+    loginButton.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });
 })

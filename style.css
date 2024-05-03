@@ -23,6 +23,35 @@ h1  {
     cursor: pointer;
 }
 
+h1 a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+/* LOGIN BUTTON */
+#login-button-container button{
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    line-height: 2.45rem;
+    font-size: 0.975rem;
+    background-color: #0f1035;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(15, 16, 53, 0.1);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+}
+    
+#login-button-container button:hover {
+    background-color: #dcf2f1;
+    color: #000000;
+    box-shadow: 0 8px 12px rgba(15, 16, 53, 0.2);
+    border-color: #0f1035;
+}
+
+/* GAMEPAGE */
 #instructions {
     font-size: 24px;
     margin-bottom: 5px;
@@ -61,7 +90,12 @@ h1  {
 #wrong-attempts {
     color: #0f1035;
     font-size: 24px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+}
+
+#progress {
+    color: #0f1035;
+    font-size: 24px;
 }
 
 .footer {
