@@ -181,6 +181,8 @@ h1 a {
     background-clip: text;
 } 
 
+/* MEDIA RESPONSIVITY */
+
 @media (max-width: 1400px) {
     .footer {
         width: 40%; 
