@@ -26,7 +26,7 @@ A simple web-based implementation of the classic hangman word guessing game usin
    ```
 2. Open `index.html` in your web browser to start playing the game.
 
-Or just click [HERE](https://guess-game-av.glitch.me/)
+   (Or just click [HERE](https://guess-game-av.glitch.me/))
 
 ## Preview
 
